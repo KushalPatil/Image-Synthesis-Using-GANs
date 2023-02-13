@@ -1,0 +1,6 @@
+# Image-Synthesis-Using-GANs
+This project aims to implement and compare various methodologies for learning a mapping between an input image and an output image in the field of image-to-image translation. The problem definition involves reconstructing the image according to specified guidelines while optimizing the difference between the generated and real images using adversarial loss. The project uses multiple datasets of 256x256 pixels images, where each image in the dataset has a target domain image and an actual image, but there is no labeling or mapping between them.
+
+The proposed method involves implementing CycleGAN, refining the results with UNIT GAN, and training BiCycleGAN using the preprocessed results. The results are compared using LPIPS Score, IS, and CIS*. The results show that BicycleGAN produces the best results with the best LPIPS, i.e., diversity scores.
+
+The takeaway from this project is that integrating different objectives between the latent and output spaces yields more realistic and diversified results. The project has potential applications in computer vision fields like dimensional augmentation, visual odometry, and optical flow. Future work includes extending the project to additional domains like videos and text.
